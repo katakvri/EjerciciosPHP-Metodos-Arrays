@@ -8,7 +8,10 @@
 </head>
 <body>
     <?php
-    
+    $week_days = array("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo");
+    echo $week_days[0];
+    echo "<br>";
+    echo $week_days[(sizeof($week_days) - 1)];
     ?>
 </body>
 </html>
