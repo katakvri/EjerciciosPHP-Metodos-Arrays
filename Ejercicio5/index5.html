@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <form action="index5.php" method="post">
+        <span style="margin: 5px;">De que figura quieres sacar el area?</span>
+        <input type="radio" name="radio" value="cuadrado">Cuadrado
+        <input type="radio" name="radio" value="triangulo">Triangulo
+        <input type="radio" name="radio" value="circulo">Circulo
+    </form>
+    <!-- formulario cuadrado-->
+    <form id="cuadrado" action="index5.php" method="post" name="cuadrado-form" style="display: none;">
+       <p style="margin: 5px;"><span style="margin: 5px;">Escribe la medida del lado del cuadrado</span><input type="number" name="cuadrado-lado"><input type="submit" value="Enviar"></p>
+    </form>
+    <!--formulario triangulo-->
+    <form id="triangulo" action="index5.php" method="post" name="triangulo-form" style="display: none;">
+        <p style="margin: 5px;"><span style="margin: 5px;">Escribe la medida de la base del triangulo</span><input type="number" name="triangulo-base"><span style="margin: 5px;"> y la altura <input type="number" name="triangulo-altura"></span><input type="submit" value="Enviar"></p>
+    </form>
+    <!--formulario circulo-->
+    <form id="circulo" action="index5.php" method="post" name="circulo-form" style="display: none;">
+        <p style="margin: 5px;"><span style="margin: 5px;">Escribe la medida del radio del circulo</span><input type="number" name="circulo-radio"><input type="submit" value="Enviar"></p>
+    </form>
+
+
+    <script>
+        var inputsArray = document.querySelectorAll('[type="radio"]');
+        console.log(inputsArray);
+        var cuadrado = document.querySelector("#cuadrado");
+        var triangulo = document.querySelector("#triangulo");
+        var circulo = document.querySelector("#circulo");
+        for (const input of inputsArray) {
+            input.addEventListener("click", () => {
+                
+            })
+        }
+    </script>
+</body>
+</html>
